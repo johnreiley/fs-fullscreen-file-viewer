@@ -1,0 +1,11 @@
+{
+    "name": "Family Search Film Viewer Fullscreen",
+    "version": "1.0",
+    "description": "This gives users viewing scanned files more viewing room by hiding the top navigation bar.",
+    "content_scripts": [{
+        "matches": ["https://www.familysearch.org/ark:/*"],
+        "css": ["style.css"],
+        "js": ["custom-toggle.js"]
+    }],
+    "manifest_version": 2
+}

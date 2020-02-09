@@ -33,13 +33,13 @@ window.onload = function () {
     let header = document.querySelector('header');
     header.appendChild(iconsLinkCss);
 
-    var navigation = document.querySelector('#global-header');
+    // var navigation = document.querySelector('#global-header');
+    var navigation = document.querySelector('header');
     var subNav = document.querySelector('.fs-subnav__container');
     var filmViewer = document.querySelector('.film-viewer');
     var filmViewerHeader = document.querySelector('.openSDHeader');
 
     if (filmViewer != null && filmViewerHeader != null) {
-
 
         toggleNavBtn.onclick = (e) => {
             if (navigation.classList.contains(hideClass) && subNav.classList.contains(hideClass)) {

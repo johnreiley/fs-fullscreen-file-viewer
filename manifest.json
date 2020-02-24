@@ -1,11 +1,16 @@
 {
-    "name": "Family Search Film Viewer Fullscreen",
+    "name": "Family Search Fullscreen Record Viewer",
     "version": "1.0.1",
-    "description": "This gives users viewing scanned files more viewing room by adding a toggle to hide the top navigation bar.",
+    "description": "This gives users viewing scanned records on familysearch.org more viewing room by adding a toggle to hide the top navigation bar.",
     "content_scripts": [{
         "matches": ["https://www.familysearch.org/ark:/*"],
         "css": ["style.css"],
         "js": ["custom-toggle.js"]
     }],
-    "manifest_version": 2
+    "manifest_version": 2,
+    "icons": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
 }
